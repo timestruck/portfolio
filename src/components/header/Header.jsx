@@ -23,13 +23,13 @@ class Header extends React.Component {
     for (let i = 0; i < layers.length; i++) {
       let depth = 0.10;
       if (i === 1) {
-        depth = 0.20;
+        depth = 0.10;
       } else if (i === 2) {
-        depth = 0.50;
+        depth = 0.60;
       } else if (i === 3) {
-        depth = 0.80;
+        depth = 0.90;
       } else if (i === 4) {
-        depth = 1.00;
+        depth = 0.80;
       }
       const movement = -(topDistance * depth);
       const translate3d = `translate3d(0, ${movement}px, 0)`;
