@@ -1,5 +1,8 @@
 // Dependencies
 import React from 'react';
+import {
+  Link,
+} from 'react-router-dom';
 
 // Styles
 import './Content.scss';
@@ -24,6 +27,7 @@ class Content extends React.Component {
           onChange={this.handleInputChange}
         />
         <span>Hello {this.state.input}</span>
+        <Link to="/about">About</Link>
       </div>
     );
   }
