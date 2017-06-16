@@ -19,7 +19,7 @@ function App() {
       <div className="site-wrapper">
         <Nav />
         <Route exact path="/" component={Header} />
-        <Route path="/about" component={Projects} />
+        <Route path="/projects" component={Projects} />
       </div>
     </Router>
   );

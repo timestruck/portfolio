@@ -11,8 +11,10 @@ function Nav() {
       <div className="navInner">
         <Link to="/" className="navTitle">Alice Xia</Link>
         <div className="navRight">
-          <Link to="/" className="navLink">Projects</Link>
-          <Link to="/about" className="navLink">About</Link>
+          <Link to="/projects" className="navLink">Projects</Link>
+          <a href="https://github.com/timestruck" target="_blank" rel="noopener noreferrer" className="navLink">
+            <i className="fa fa-github" />
+          </a>
         </div>
       </div>
       <div className="borderBottom" />
