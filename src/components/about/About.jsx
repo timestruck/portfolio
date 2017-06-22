@@ -8,12 +8,21 @@ class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: 'World',
+      imageStatus: 'loading',
     };
   }
 
   componentDidMount() {
+    document.getElementById('aboutWrapper').style.display = 'block';
     window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleImageLoaded() {
+    this.setState({ imageStatus: 'loaded' });
+  }
+
+  handleImageErrored() {
+    this.setState({ imageStatus: 'failed to load' });
   }
 
   handleScroll() {
@@ -38,7 +47,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <header>
+      <header id="aboutWrapper">
         <div id="hero">
           <div className="layer-bg layer" datatype="parallax" />
           <div className="layer-1 layer" datatype="parallax" />

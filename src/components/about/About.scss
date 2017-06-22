@@ -5,6 +5,8 @@ $pink: #C7A3AF;
 $heroHeight: 800px;
 
 header {
+	display: none;
+
 	h1 {
 		margin: 0;
 		text-transform: uppercase;
@@ -34,7 +36,7 @@ header {
 
 .container {
 	padding: 2rem 4rem 30rem;
-	font-family: arial;
+	font-family: 'Raleway';
 	color: $white;
 	text-align: left;
 	max-width: 84rem;

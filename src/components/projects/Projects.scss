@@ -160,7 +160,8 @@ $white: #fff;
 }
 
 .pokemon {
-    background-image: url('../../assets/pokemon.gif');
+    background-image: url('../../assets/pokeball.gif');
+    background-position: right;
 
     &:hover {
         background: #3782B8;
