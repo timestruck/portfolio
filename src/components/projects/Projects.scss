@@ -4,5 +4,189 @@ $white: #fff;
     background: $white;
     min-height: 100vh;
     padding: 4rem;
-    margin-top: 5rem;
+    margin-top: 15rem;
+
+    @media (max-width: 860px) {
+        margin-top: 10rem;
+    }
+}
+
+.projectsRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectsLeft {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 860px) {
+        flex: 1 1 100%;
+    }
+}
+
+.projectsRight {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 860px) {
+        flex: 1 1 100%;
+    }
+}
+
+.projectsVideoGradient {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.projectsItem {
+    display: block;
+    width: 100%;
+    color: $white;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 1s ease;
+
+    &::after {
+        display: block;
+        content: ' ';
+        padding-bottom: 65%;
+        background: rgba(0,0,0,0.3);
+
+        @media (max-width: 640px) {
+            padding-bottom: 80%;
+        }
+    }
+
+    &:hover {
+        .projectsType {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        video {
+            opacity: 0;
+        }
+
+        .projectsView {
+            opacity: 1;
+            transform: translateY(0);
+            transition: 0.3s ease;
+        }
+
+        &::after {
+            background: 0;
+        }
+
+        transition: background 1s ease;
+    }
+}
+
+.projectsSubtitle {
+    position: absolute;
+    top: 3.5rem;
+    left: 3.5rem;
+    font-family: 'Raleway';
+    letter-spacing: 1px;
+}
+
+.projectsTitle {
+    position: absolute;
+    left: 3.5rem;
+    right: 3.5rem;
+    top: 7rem;
+    font-family: 'Raleway';
+    letter-spacing: 1px;
+}
+
+.projectsRole {
+    position: absolute;
+    bottom: 7.5rem;
+    left: 3.5rem;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 1px;
+}
+
+.projectsType {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 3.5rem;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.projectsView {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 3.5rem;
+    text-decoration: underline;
+    transform: translateY(2rem);
+    opacity: 0;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.projectsVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.columbia {
+    background-image: url('../../assets/arts.jpg');
+
+    &:hover {
+        background: #EF5C6E;
+    }
+}
+
+.mcnulty {
+    &:hover {
+        background: #66648B;
+    }
+}
+
+.pokemon {
+    background-image: url('../../assets/pokemon.gif');
+
+    &:hover {
+        background: #3782B8;
+    }
+}
+
+.ersatz {
+    background-image: url('../../assets/ersatz.png');
+
+    &:hover {
+        background: #85AF4B;
+    }
+}
+
+.zombify {
+    background-image: url('../../assets/zombify.png');
+
+    &:hover {
+        background: #2BAF93;
+    }
+}
+
+.cloudflare {
+    background-image: url('../../assets/cloudflare.png');
+
+    &:hover {
+        background: #F48931;
+    }
 }

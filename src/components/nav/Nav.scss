@@ -2,11 +2,10 @@ $bronze: #13040C;
 $pink: #C7A3AF;
 
 .navWrapper {
-    color: #fff;
-    background: $bronze;
+    color: #111;
     font-family: 'Roboto Condensed';
     padding: 1rem 4rem;
-    position: fixed;
+    position: absolute;
     z-index: 100;
     top: 0;
     left: 0;
@@ -32,12 +31,10 @@ $pink: #C7A3AF;
 .navLink {
     text-transform: uppercase;
     margin-left: 10rem;
-    transition: color 0.3s ease;
     font-family: 'Roboto Condensed';
 
     &:hover {
-        color: $pink;
-        transition: color 0.3s ease;
+        text-decoration: underline;
     }
 
     @media (max-width: 860px) {
@@ -45,41 +42,3 @@ $pink: #C7A3AF;
     }
 }
 
-.borderBottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 1rem;
-    background: $bronze;
-
-    @media (max-width: 860px) {
-        height: 0.7rem;
-    }
-}
-
-.borderLeft {
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    width: 1rem;
-    background: $bronze;
-
-    @media (max-width: 860px) {
-        width: 0.7rem;
-    }
-}
-
-.borderRight {
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    width: 1rem;
-    background: $bronze;
-
-    @media (max-width: 860px) {
-        width: 0.7rem;
-    }
-}

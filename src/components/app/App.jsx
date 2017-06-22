@@ -7,8 +7,10 @@ import {
 
 // Components
 import Nav from '../nav/Nav.jsx';
-import Header from '../header/Header.jsx';
+import About from '../about/About.jsx';
 import Projects from '../projects/Projects.jsx';
+import Pokemon from '../pokemon/Pokemon.jsx';
+import Subway from '../subway/Subway.jsx';
 
 // Styles
 import './App.scss';
@@ -18,8 +20,10 @@ function App() {
     <Router>
       <div className="site-wrapper">
         <Nav />
-        <Route exact path="/" component={Header} />
-        <Route path="/projects" component={Projects} />
+        <Route exact path="/" component={Projects} />
+        <Route path="/about" component={About} />
+        <Route path="/pokemon" component={Pokemon} />
+        <Route path="/subway" component={Subway} />
       </div>
     </Router>
   );

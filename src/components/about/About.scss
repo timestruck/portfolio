@@ -1,0 +1,128 @@
+
+$white: #fff;
+$bronze: #13040C;
+$pink: #C7A3AF;
+$heroHeight: 800px;
+
+header {
+	h1 {
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 32px;
+		padding-top: 20px;
+		font-weight: 400;
+		color: #fff;
+		font-family: 'Abel';
+		margin-bottom: 3rem;
+	}
+
+	a {
+		color: $pink;
+		text-decoration: underline;
+	}
+}
+
+#hero {
+	height: $heroHeight;
+	overflow: hidden;
+	position: relative;
+}
+
+#content {
+	background-color: $bronze;
+}
+
+.container {
+	padding: 2rem 4rem 30rem;
+	font-family: arial;
+	color: $white;
+	text-align: left;
+	max-width: 84rem;
+	margin: auto;
+}
+
+.gradient {
+	background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.33));
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.layer {
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: $heroHeight;
+	position: fixed;
+	z-index: -1;
+}
+
+#hero-mobile {
+	display: none;
+	background: url("../../assets/mobileC.jpg") no-repeat center bottom / cover;
+	height: 100%;
+
+	&::after {
+		content: ' ';
+		display: block;
+		padding-bottom: 63.2%;
+	}
+}
+
+.first-section {
+	padding: 50px 0 20px 0;
+}
+
+#hero, .layer {
+	min-height: 800px;
+}
+
+.layer-bg {
+	background-image: url('../../assets/skyC.png');
+}
+.layer-1 {
+	background-image: url('../../assets/topcloudsC.png');
+		}
+.layer-2 {
+	background-image: url('../../assets/middlecloudsCC.png');
+}
+.layer-3 {
+	background-image: url('../../assets/personC.png');
+		}
+.layer-4 {
+	background-image: url('../../assets/groundC.png');
+
+		}
+.layer-overlay {
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png');
+
+		}
+
+
+// Media Queries
+@media only screen and (max-width: 768px) {
+	#hero {
+		display: none;
+	}
+	#hero-mobile {
+		display: block;
+	}
+
+	.container {
+		padding: 4rem 4rem 10rem;
+	}
+}
+
+
+// Additional
+.tutorial-link {
+	color: $white;
+	font-size: 18px;
+	text-decoration: underline;
+	&:hover {
+		color: #ede0d5;
+	}
+}

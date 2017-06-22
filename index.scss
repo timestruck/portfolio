@@ -1,0 +1,48 @@
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans');
+$font-stack: 'Open Sans', sans-serif;
+$white: #ffffff;
+$bronze: #13040C;
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    font-family: $font-stack;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+  margin: 0;
+}
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Crimson Text';
+}
+
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
