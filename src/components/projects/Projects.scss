@@ -9,7 +9,10 @@ $white: #fff;
 
     @media (max-width: 860px) {
         margin-top: 10rem;
-        padding: 4rem 2.5rem;
+    }
+
+    @media (max-width: 640px) {
+        padding: 4rem 0 0;
     }
 }
 
@@ -48,6 +51,10 @@ $white: #fff;
     left: 0;
     right: 0;
     bottom: 0;
+
+    @media (max-width: 640px) {
+        background: rgba(0,0,0,0.3);
+    }
 }
 
 .projectsItem {
@@ -71,6 +78,7 @@ $white: #fff;
 
         @media (max-width: 640px) {
             padding-bottom: 80%;
+            background: rgba(0,0,0,0.3);
         }
     }
 
