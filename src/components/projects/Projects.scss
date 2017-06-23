@@ -4,10 +4,12 @@ $white: #fff;
     background: $white;
     min-height: 100vh;
     padding: 4rem;
-    margin-top: 15rem;
+    max-width: 140rem;
+    margin: 15rem auto 0;
 
     @media (max-width: 860px) {
         margin-top: 10rem;
+        padding: 4rem 2.5rem;
     }
 }
 

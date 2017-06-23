@@ -27,7 +27,7 @@ class Projects extends React.Component {
       <div className="projectsWrapper">
         <div className="projectsRow">
           <a href="http://mcnultyfound.org" target="_blank" rel="noopener noreferrer" className="projectsItem projectsItemFull mcnulty">
-            <video className="projectsVideo" autoPlay playsinline loop muted poster="../../assets/mcnulty.jpg">
+            <video className="projectsVideo" autoPlay playsInline loop muted poster="../../assets/mcnulty.jpg">
               <source src="http://mcnultyfound.org/videos/homepage.mp4" type="video/mp4" />
             </video>
             <div className="projectsVideoGradient" />
@@ -61,11 +61,11 @@ class Projects extends React.Component {
               <h2 className="projectsTitle">Ersatz</h2>
               <h5 className="projectsRole">Software Engineer</h5>
               <h4 className="projectsType">Desktop game built in Java</h4>
-              <h4 className="projectsView">Download Game</h4>
+              <h4 className="projectsView">View Game</h4>
             </a>
             <Link to="/pokemon" className="projectsItem pokemon">
               <h5 className="projectsSubtitle">Personal Project</h5>
-              <h2 className="projectsTitle">Guess That Pokemon</h2>
+              <h2 className="projectsTitle">Guess That Pokemon (in progress)</h2>
               <h5 className="projectsRole">Sole Developer</h5>
               <h4 className="projectsType">React Single Page Application</h4>
               <h4 className="projectsView">View project</h4>
