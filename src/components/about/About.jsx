@@ -61,32 +61,8 @@ class About extends React.Component {
           <div className="container">
             <h1>Hi there!</h1>
             <p>I'm Alice Xia, a full stack software engineer based in New York City.
-              I love making things work and look pretty (especially websites!), and
-              playing around with new technologies. Currently, those are React,
-              Redux, Flow and Next.js.
-            </p>
-            <p>
-              I graduated from Cornell University with a degree in Computer Science
-              in 2016. When I'm not coding, you'll likely find me digging in at a
-              local restaurant, on the Central Park bike path, attempting a new hip
-              sport (trapeze is my current fav), or working on a random craft at
-              home. Right now, I'm trying to perfect macarons. Tips anyone?
-            </p>
-            <p>
-              And when I'm not doing those things, I'm either napping or binge
-              watching some show or movie. The internet is an amazing place.
-            </p>
-            <p>
-              Before you leave, feel free to check out my
-              &nbsp;<a target="_blank" rel="noopener noreferrer" href="https://github.com/timestruck">github</a>
-              &nbsp;or <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alice-xia-17904370">LinkedIn</a>
-              &nbsp;for more about my professional life.
-              As for non-career related stuff, I'm also on
-              &nbsp;<a target="_blank" rel="noopener noreferrer" href="https://instagram.com/aliceinapalice">Instagram</a>,
-              where my affinity for cute pets, good food, and adventure shine through. Enjoy!
-            </p>
-            <p>Send any questions or thoughts my way at
-              &nbsp;<a href="mailto:alicexia20@gmail.com">alicexia20@gmail.com</a>!
+              I love making things work and look pretty, and
+              playing around with new technologies.
             </p>
           </div>
         </div>
